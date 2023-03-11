@@ -21,6 +21,12 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
 
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -31,7 +37,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -39,32 +45,62 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar" >
+    <nav class="navbar">
         <div class="max-width" style="padding-left: 0.5cm; padding-right: 0.5cm;">
-            <div class="logo"><a href="#"></a>
-                <span id="big"><p style="font-size:3vw;">AAkash Ganga</p></span><span id="medium"></span><span id="small"></span> </a></div>
+            <div class="logo"><a href="#"><div class="logo"></div>
+                <span id="aakashganga"><p>AAkash Ganga</p></span><span id="medium"></span><span id="small"></span> </a></div>
                 <!-- <img src="images/temp logo.jpg" alt=""  height="125" width="244" > -->
             <ul class="menu">
                 <li><a href="index.html" class="menu-btn"><span class="fa fa-home "></span> Home</a></li>
                 <li><a href="index.html#about" class="menu-btn"><span class="fa fa-users "></span> About us</a></li>
                 <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
-                <li><a href="index.html#skills" class="menu-btn"><span class="fas fa-handshake "></span> Services</a></li>
-                <li><a href="gallery2.html" class="menu-btn"><span class="fa fa-camera-retro "></span> Gallery</a></li>
+                <li><a href="index.html#services" class="menu-btn"><span class="fas fa-handshake "></span> Services</a></li>
+                <li><a href="gallery.html" class="menu-btn"><span class="fa fa-camera-retro "></span> Gallery</a></li>
                 <li><a href="pricelist.html" class="menu-btn"><span class="fa fa-list"></span> Plans</a></li>
-                <li><a href="index.html#contact" class="menu-btn"><span class="fa fa-phone fa-rotate-90 "></span> Contact Us</a></li>
+                <li><a href="index.html#contact" class="menu-btn"><span class="fa fa-volume-control-phone"></span> Contact Us</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+
+    <style>
+        
+
+        /* #pricelist_BG::before{
+            content: "";
+            background-image: url('https://t3.ftcdn.net/jpg/01/61/93/40/240_F_161934088_WoBUwxGxbos4p4fpQuoEonNP52ceJtQg.jpg');
+            background-size: 20%;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+        @media only screen and (max-width: 947px) {
+            
+            #pricelist_BG::before{
+            content: "";
+            background-image: url('');
+            background-size: 20%;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        } */
+            
+    </style>
+
     
 
-    <div style="padding-top: 2.5cm;">
+    <div style="padding-top: 2.5cm;" class="background_div">
 
-    <div class="container" style="font-family: 'Merriweather', serif;">
+    <div class="container" id="pricelist" style="font-family: 'Bree Serif', serif, 'Ubuntu', sans-serif;">
         <div class="top">
-          <h1>Plans & Pricing</h1>
+          <h2 class="title">Plans & Pricing</h2>
+          
         </div>
     
             <div class="package-container">
@@ -112,14 +148,33 @@
                 
                 </ul>
                 <a href="tel:+917055071650" class="button button3">Book Now</a>
+
             </div>
         </div>
     </div>
 
     <!-- footer section start -->
 
-    <footer>
-        <span>Aakash Ganga | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    <footer id="footer">
+        <span >Aakash Ganga | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        
+        <span style="float: right" >
+            <a href="" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size: 25px; color: #0077b5"></i>
+            </a>
+            <a href="https://www.youtube.com/@AviralSinghNegi" target="_blank">
+                <i class="fa fa-youtube-play" style="font-size:25px;color:red"></i>
+            </a>
+            <a href="https://instagram.com/aviralsinghnegi?igshid=ZDdkNTZiNTM=" target="_blank">
+                <i class="fa fa-instagram" style="font-size:25px; color:#E1306C"></i>
+            </a>
+            <a href="http://wa.me/7055071650" target="_blank">
+                <i class="fa fa-whatsapp" style="font-size:25px;color:#25D366"></i>
+            </a>
+            <a href="https://m.facebook.com/107171911638627/" target="_blank">
+                <i class="fa fa-facebook-square" style="font-size:25px;color:#0165E1"></i>
+            </a>
+        </span>
     </footer>
 
     <script src="script.js"></script>
