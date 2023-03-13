@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to my website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- rupee icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+        background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+        font-family: 'Poppins';
+        }
+
+        .container {
+        max-width: 960px;
+        }
+
+        .pricing-header {
+        max-width: 700px;
+        }
+        .text-muted{
+            font-size: 30px;
+        }
+        @media (max-width: 768px){
+            .col{
+                padding-right: calc(var(--bs-gutter-x) * 1);
+                padding-left: calc(var(--bs-gutter-x) * 1);
+            }
+        }
+    </style>
+
+<div class="container py-3">
+    <header>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Plans and Pricing</h1>
+        <p class="fs-5 text-muted"> </p>
+      </div>
+    </header>
+    
+    <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #0dcaf0;">
+            <div class="card-header py-3" style='background-color: #0dcaf0;'>
+              <h4 class="my-0 fw-normal">Basic</h4>
+            </div>
+            <div class="card-body" >
+              <h1 class="card-title pricing-card-title">1000 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>One night stay</li>
+                <li>Three times meal with snacks</li>
+                <li>Help center access</li>
+                <li>.....</li>
+                <li>.....</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn btn-outline-info">Book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #ffc107;">
+            <div class="card-header py-3 " style='background-color: #ffc107;'>
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">1500 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Homestay</li>
+                <li>Bonefire</li>
+                <li>Trekking</li>
+                <li>Help center access</li>
+                <li>.....</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn btn-outline-warning">Book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">3000 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Camping</li>
+                <li>Bonfire</li>
+                <li>One adventure of your choice</li>
+                <li>Guide</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+</div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
