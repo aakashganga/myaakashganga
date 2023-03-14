@@ -118,9 +118,7 @@ section .title::after{
     transition: all 0.3s ease;
     letter-spacing: 1.2px;
 }
-.navbar.sticky{
 
-}
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -128,10 +126,8 @@ section .title::after{
 }
 .navbar .logo span{
     color: white;
-    /* color: #fff; */
     font-size: 35px;
     font-weight: 450;
-    /* font-family: 'Merriweather', sans-serif; */
 }
 .navbar .logo a:hover{
     color: black;

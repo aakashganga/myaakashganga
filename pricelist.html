@@ -11,10 +11,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAkash Ganga</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Thank you for contacting us</title>
 
-    <link rel="stylesheet" href="css/pricelist.css">
+    <!-- bootstrap  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -38,22 +41,31 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/pricelist.css">
 </head>
 
 
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
+  <style>
+    ol, ul.menu {
+        margin-bottom: 0rem;
+    }
+  </style>
+    
+    <nav class=" navbar " style="display: inline;">
         <div class="max-width" style="padding-left: 0.5cm; padding-right: 0.5cm;">
-            <div class="logo"><a href="#"><div class="logo"></div>
-                <span id="aakashganga"><p>AAkash Ganga</p></span><span id="medium"></span><span id="small"></span> </a></div>
-                <!-- <img src="images/temp logo.jpg" alt=""  height="125" width="244" > -->
-            <ul class="menu">
+            <div class="logo">
+                <a href="#">
+                <span id="aakashganga"><p style="margin-bottom: 0px;">AAkash Ganga</p></span><span id="medium"></span><span id="small"></span> 
+                </a>
+            </div>
+
+            <ul class="menu list-unstyled">
                 <li><a href="index.html" class="menu-btn"><span class="fa fa-home "></span> Home</a></li>
                 <li><a href="index.html#about" class="menu-btn"><span class="fa fa-users "></span> About us</a></li>
-                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
                 <li><a href="index.html#services" class="menu-btn"><span class="fas fa-handshake "></span> Services</a></li>
                 <li><a href="gallery.html" class="menu-btn"><span class="fa fa-camera-retro "></span> Gallery</a></li>
                 <li><a href="pricelist.html" class="menu-btn"><span class="fa fa-list"></span> Plans</a></li>
@@ -65,95 +77,115 @@
         </div>
     </nav>
 
-    <style>
+    <div style="padding-top: 1.5cm;" class="background_div">
+        <!-- price list style  -->
+        <style>
+            a{
+                text-decoration: none;
+            }
+            body {
+              font-family: 'Bree Serif', serif, 'Ubuntu', sans-serif;
+            }
+    
+            .container {
+              max-width: 960px;
+            }
+    
+            .pricing-header {
+              max-width: 700px;
+            }
+            .text-muted{
+                font-size: 30px;
+            }
+            @media (max-width: 768px){
+                .col{
+                    padding-right: calc(var(--bs-gutter-x) * 1);
+                    padding-left: calc(var(--bs-gutter-x) * 1);
+                }
+                .container{
+                  margin-bottom: 40px;
+                }
+            }
+        </style>
+    <div class="container py-3">
+        <div>
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Plans and Pricing</h1>
+          </div>
+        </div>
         
-
-        /* #pricelist_BG::before{
-            content: "";
-            background-image: url('https://t3.ftcdn.net/jpg/01/61/93/40/240_F_161934088_WoBUwxGxbos4p4fpQuoEonNP52ceJtQg.jpg');
-            background-size: 20%;
-            z-index: -1;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-        }
-        @media only screen and (max-width: 947px) {
-            
-            #pricelist_BG::before{
-            content: "";
-            background-image: url('');
-            background-size: 20%;
-            z-index: -1;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-        } */
-            
-    </style>
-
-    
-
-    <div style="padding-top: 2.5cm;" class="background_div">
-
-    <div class="container" id="pricelist" style="font-family: 'Bree Serif', serif, 'Ubuntu', sans-serif;">
-        <div class="top">
-          <h2 class="title">Plans & Pricing</h2>
-          
-        </div>
-    
-            <div class="package-container">
-            <div class="packages" style="color: blue;">
-                <h1 style="color: blue;">Camping</h1>
-                <br>
-                <!-- <i class='fas fa-campground white-color' style='font-size:48px; color: blue;'></i> -->
-                <img src="images/campsite-png-16.png" alt="" height="auto" width="150px">
-                <h2 class="text1" style="color: blue;"><i class="fa fa-inr"></i> 1500</h2>
-                <ul class="list">
-                <li class="first">Breakfast</li>
-                <li>Lunch</li>
-                <li>Snacks</li>
-                <li>Dinner</li>
-                
-                </ul>
-                <a href="tel:+917055071650" class="button button1">Book Now</a>
+        <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #0dcaf0;">
+                <div class="card-header py-3" style='background-color: #0dcaf0;'>
+                  <h4 class="my-0 fw-normal">Basic</h4>
+                </div>
+                <div class="card-body" >
+                  <h1 class="card-title pricing-card-title">1000 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li># One night stay #</li>
+                    <li># Three times meal with snacks #</li>
+                    <li># Help center access #</li>
+                    <li>.....</li>
+                    <li>.....</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn btn-outline-info">Book now</button>
+                </div>
+              </div>
             </div>
-            <div class="packages" style='color: #ff007c;'>
-                <h1>Home Stay</h1>
-                <br>
-                <!-- <i class="fa fa-home" aria-hidden="true" style='font-size:48px; color: #ff007c;' ></i> -->
-                <img src="images/night imagae.png" alt="" height="auto" width="150px">
-                <h2 class="text1" style='color: #ff007c;'><i class="fa fa-inr"></i> 1100</h2>
-                <ul class="list">
-                <li class="first">Breakfast</li>
-                <li>Lunch</li>
-                <li>Snacks</li>
-                <li>Dinner</li>
-                
-                </ul>
-                <a href="tel:+917055071650" class="button button2">Book Now</a>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #ffc107;">
+                <div class="card-header py-3 " style='background-color: #ffc107;'>
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">1500 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li># Homestay #</li>
+                    <li># Bonefire #</li>
+                    <li># Trekking #</li>
+                    <li># Help center access #</li>
+                    <li>.....</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn btn-outline-warning">Book now</button>
+                </div>
+              </div>
             </div>
-            <div class="packages" style='color: #d703ef;'>
-                <h1>Hotel</h1>
-                <br>
-                <!-- <i class='fa fa-hotel white-color' style='font-size:48px; color: #ffae42;'></i> -->
-                <img src="images/tree.png" alt="" height="auto" width="150px">
-                <h2 class="text1" style='color: #d703ef;'><i class="fa fa-inr"></i> 1000</h2>
-                <ul class="list">
-                <li class="first">Breakfast</li>
-                <li>Lunch</li>
-                <li>Snacks</li>
-                <li>Dinner</li>
-                
-                </ul>
-                <a href="tel:+917055071650" class="button button3">Book Now</a>
-
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">3000 <i class="fa fa-inr"></i><small class="text-muted fw-light">/person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li># Camping #</li>
+                    <li># Bonfire #</li>
+                    <li># One adventure of your choice #</li>
+                    <li># Guide #</li>
+                    <li># Help center access #</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Book now</button>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </main>
     </div>
 
+    
+    
+
     <!-- footer section start -->
+    <style>
+      @media only screen and (min-width: 575px) {
+          #footer {
+              position: fixed;
+              bottom: 0;
+          }
+      }
+  </style>
 
     <footer id="footer">
         <span >Aakash Ganga | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
